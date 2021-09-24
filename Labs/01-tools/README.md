@@ -2,7 +2,7 @@
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/Ladislav-Drapal/Digital-electronics-2/tree/main/Labs/01-tools/led)
+   [https://github.com/...](https://github.com/Ladislav-Drapal/Digital-electronics-2/tree/main/Labs/01-tools)
 
 
 ### Blink example
@@ -44,16 +44,16 @@ int main(void)
     while (1)
     {
 		PORTB = PORTB | (1<<LED_GREEN);
-      // Pause several milliseconds – (DOT)
-      _delay_ms(SHORT_DELAY);
+		// Pause several milliseconds – (DOT)
+		_delay_ms(SHORT_DELAY);
       		
 		PORTB = PORTB & ~(1<<LED_GREEN);
 		// Pause several milliseconds – (LED – off)
 		_delay_ms(STOP_DELAY);
 		
 		PORTB = PORTB | (1<<LED_GREEN);
-      // Pause several milliseconds –  (COMMA)
-      _delay_ms(LONG_DELAY);
+		// Pause several milliseconds – (COMMA)
+		_delay_ms(LONG_DELAY);
 		
 		PORTB = PORTB & ~(1<<LED_GREEN);
 		// Pause several milliseconds – (LED – off)
