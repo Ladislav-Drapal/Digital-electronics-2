@@ -2,7 +2,7 @@
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/Ladislav-Drapal/Digital-electronics-2/tree/main/Labs/01-tools)
+   [https://github.com/Ladislav-Drapal/Digital-electronics-2/tree/main/Labs/01-tools](https://github.com/Ladislav-Drapal/Digital-electronics-2/tree/main/Labs/01-tools)
 
 
 ### Blink example
