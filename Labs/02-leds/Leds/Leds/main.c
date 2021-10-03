@@ -39,7 +39,7 @@ int main(void)
     // Configure the second LED at port C
 	DDRC = DDRC | (1<<LED_RED); //vystup
 	
-	PORTC = PORTC & ~(0<<LED_RED); //log1, led nesviti
+	PORTC = PORTC & (0<<LED_RED); //log1, led nesviti
 
 
     // Configure Push button at port D and enable internal pull-up resistor
@@ -51,18 +51,15 @@ int main(void)
     // Infinite loop
     while (1)
     {
-        // Pause several milliseconds
-        //_delay_ms(BLINK_DELAY);
-
         // WRITE YOUR CODE HERE
 		//PORTB = PORTB | (1<<LED_GREEN);
 		//_delay_ms(BLINK_DELAY);
-		//PORTC = PORTC & (0<<LED_RED);
+		//PORTB = PORTB & ~(0<<LED_GREEN);
 		//_delay_ms(BLINK_DELAY);
 		
-		//PORTC = PORTC | (1<<LED_RED);
+		//PORTC = PORTC & ~(0<<LED_RED);
 		//_delay_ms(BLINK_DELAY);
-		//PORTB = PORTB & (0<<LED_GREEN);
+		//PORTC = PORTC | (1<<LED_RED);
 		//_delay_ms(BLINK_DELAY);
 		
 		PORTB = PORTB ^ (1<<LED_GREEN);
