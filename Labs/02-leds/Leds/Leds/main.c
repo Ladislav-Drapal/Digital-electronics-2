@@ -57,9 +57,9 @@ int main(void)
 		//PORTB = PORTB & ~(0<<LED_GREEN);
 		//_delay_ms(BLINK_DELAY);
 		
-		//PORTC = PORTC & ~(0<<LED_RED);
-		//_delay_ms(BLINK_DELAY);
 		//PORTC = PORTC | (1<<LED_RED);
+		//_delay_ms(BLINK_DELAY);
+		//PORTC = PORTC & ~(0<<LED_RED);
 		//_delay_ms(BLINK_DELAY);
 		
 		PORTB = PORTB ^ (1<<LED_GREEN);

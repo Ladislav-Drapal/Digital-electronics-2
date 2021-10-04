@@ -2,7 +2,7 @@
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/Ladislav-Drapal/Digital-electronics-2/tree/main/Labs/](https://github.com/Ladislav-Drapal/Digital-electronics-2/tree/main/Labs/)
+   [https://github.com/Ladislav-Drapal/Digital-electronics-2/](https://github.com/Ladislav-Drapal/Digital-electronics-2/)
 
 
 ### Active-low and active-high LEDs
@@ -87,9 +87,9 @@ int main(void)
 		PORTB = PORTB & ~(0<<LED_GREEN);
 		_delay_ms(BLINK_DELAY);
 		
-		PORTC = PORTC & ~(0<<LED_RED);
-		_delay_ms(BLINK_DELAY);
 		PORTC = PORTC | (1<<LED_RED);
+		_delay_ms(BLINK_DELAY);
+		PORTC = PORTC & ~(0<<LED_RED);
 		_delay_ms(BLINK_DELAY);
     }
 
