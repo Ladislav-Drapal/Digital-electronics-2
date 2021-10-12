@@ -22,8 +22,8 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### GPIO library
 
 1. In your words, describe the difference between the declaration and the definition of the function in C.
-   * Function declaration – ukazuje jak vypadá funkce, co nám vrací a jaké má parametry
-   * Function definition – (jak se správá funkce Uint8.. 2 osmi bitové neznamínkové parametry x*x)
+   * Function declaration – ukazuje jak funkce vypadá, co nám vrací a jaké má parametry.
+   * Function definition – říká nám, kde se proměnná ukládá. Paměť pro proměnnou je přidělena během definice.
 
 2. Part of the C code listing with syntax highlighting, which toggles LEDs only if push button is pressed. Otherwise, the value of the LEDs does not change. Use function from your GPIO library. Let the push button is connected to port D:
 
