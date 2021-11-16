@@ -14,7 +14,7 @@ Link to this file in your GitHub repository:
    * SPI pins
    * external interrupt pins INT0, INT1
 
-   ![your figure](pictures/arduino_uno_pinout.png)
+   ![schema](pictures/arduino_uno_pinout.png)
 
 ### I2C
 
@@ -39,6 +39,10 @@ ISR(TIMER1_OVF_vect)
     // Increment I2C slave address
     case STATE_IDLE:
         addr++;
+		
+		if(addr < 120) state = STATE_SEND;
+		   else addr = 7;
+		
         // If slave address is between 8 and 119 then move to SEND state
 
         break;
@@ -54,6 +58,10 @@ ISR(TIMER1_OVF_vect)
         // +------------------------+------------+
         result = twi_start((addr<<1) + TWI_WRITE);
         twi_stop();
+		
+		if(result == 0) state = STATE_ACK;
+		   else state = STATE_IDLE;
+
         /* Test result from I2C bus. If it is 0 then move to ACK state, 
          * otherwise move to IDLE */
 
@@ -61,6 +69,13 @@ ISR(TIMER1_OVF_vect)
 
     // A module connected to the bus was found
     case STATE_ACK:
+	
+	    uart_puts("addr:");
+		itoa(addr, uart_string, 16);
+		uart_puts(uart_string);
+		uart_puts("\r\n");
+		state = STATE_IDLE;
+		
         // Send info about active I2C slave to UART and move to IDLE
 
         break;
@@ -75,7 +90,7 @@ ISR(TIMER1_OVF_vect)
 
 2. (Hand-drawn) picture of I2C signals when reading checksum (only 1 byte) from DHT12 sensor. Indicate which specific moments control the data line master and which slave.
 
-   ![your figure]()
+   ![prubeh](pictures/cas_prubeh.png)
 
 ### Meteo station
 
@@ -83,4 +98,4 @@ Consider an application for temperature and humidity measurement and display. Us
 
 1. FSM state diagram picture of meteo station. The image can be drawn on a computer or by hand. Concise name of individual states and describe the transitions between them.
 
-   ![your figure]()
+   ![diagram](pictures/diagram.png)
