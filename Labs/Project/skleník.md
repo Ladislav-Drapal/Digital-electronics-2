@@ -31,13 +31,16 @@ Cílem projektu je vytvořit ovládání a monitorování intenzity osvětlení,
 ## Hardware description
 
 ### V projektu byly použity tyto komponenty:
-1x Mikrokontrolér ATMEGA328P
-1x Displej Hd44780 (16x2)
-1x Moisture sensor V1.2
-1x Fotorezistor GL5549 + rezistor 10k
-1x I2C vlhkoměr a teploměr DHT12
-4x červená LED dioda
-4x rezistor 1k
+* 1x Mikrokontrolér ATMEGA328P
+* 1x Displej Hd44780 (16x2)
+* 1x Moisture sensor V1.2
+* 1x Fotorezistor GL5549 + rezistor 10k
+* 1x I2C vlhkoměr a teploměr DHT12
+* 4x červená LED dioda
+* 4x rezistor 1k
+
+### Schéma zapojení
+
 
 <a name="libs"></a>
 
