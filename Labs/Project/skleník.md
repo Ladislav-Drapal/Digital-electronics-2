@@ -64,7 +64,7 @@ Knihovny byly použity z laboratorních cvičení z předmětu digitální elekt
 ![Soil](Image/Soil_moist2.png)
 
 #### Stavový diagram pro senzor úrovně světla
-![Light](Image/Light_level2.png)
+![Light](Image/Light_level.png)
 
 
 ### Popis kódu a simulace
