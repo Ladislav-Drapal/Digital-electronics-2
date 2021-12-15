@@ -58,13 +58,13 @@ Knihovny byly použity z laboratorních cvičení z předmětu digitální elekt
 ![Humidity](Image/Humidity2.png)
 
 #### Stavový diagram pro teplotu
-![main](Image/Temperature2.png)
+![Temperature](Image/Temperature2.png)
 
 #### Stavový diagram pro senzor vlhkosti půdy
-![main](Image/Soil_moist2.png)
+![Soil](Image/Soil_moist2.png)
 
 #### Stavový diagram pro senzor úrovně světla
-![main](Image/Light_level2.png)
+![Light](Image/Light_level2.png)
 
 
 ### Popis kódu a simulace
