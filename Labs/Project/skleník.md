@@ -24,7 +24,7 @@ Link to this file in your GitHub repository:
 
 ## Project objectives
 
-Cílem projektu je vytvořit ovládání a monitorování intenzity osvětlení, vlhkosti a teploty ve skleníku. U neinteligentních skleníků (které nemají možnost regulace dochází často k neodborné péči o rostliny, při malé vlhkosti půdy dochází k zasychání rostlin, při velké vlhkosti naopak rostliny chytají plíseň. U obou případů dojde k likvidaci rostlin, takže úroda bude malá nebo v nejhorších případech zcela zanikne. Tomu je ale konec. Bylo vytvořeno monitorování základních veličin ve skleníku. Tyto základní prvky jsou velmi důležité pro správný růst rostlin, zeleniny a ovoce uvnitř skleníku. Díky monitorování ze senzorů jsme schopni za včasu ovládat tyto základní prvky. Správným ovládáním osvětlení, vlhkosti a teploty máme zaručenou velice kvalitní úrodu. Už tedy nehrozí žádné zasychání.
+Cílem projektu je vytvořit ovládání a monitorování intenzity osvětlení, vlhkosti a teploty ve skleníku. U neinteligentních skleníků (které nemají možnost regulace dochází často k neodborné péči o rostliny, při malé vlhkosti půdy dochází k zasychání rostlin, při velké vlhkosti naopak rostliny chytají plíseň. U obou případů dojde k likvidaci rostlin, takže úroda bude malá nebo v nejhorších případech zcela zanikne. Tomu je ale konec. Bylo vytvořeno monitorování základních veličin ve skleníku. Tyto základní prvky jsou velmi důležité pro správný růst rostlin, zeleniny a ovoce uvnitř skleníku. Díky monitorování ze senzorů jsme schopni za včasu ovládat tyto základní prvky. Správným ovládáním osvětlení, vlhkosti a teploty máme zaručenou velice kvalitní úrodu. Už tedy nebude hrozit žádné zasychání.
 
 <a name="hardware"></a>
 
@@ -40,7 +40,9 @@ Cílem projektu je vytvořit ovládání a monitorování intenzity osvětlení,
 * 4x rezistor 1k
 
 ### Schéma zapojení
+![schema](Image/schema.png)
 
+Na obrázku je schéma kompletního zapojení
 
 <a name="libs"></a>
 
@@ -57,6 +59,8 @@ Knihovny byly použity z laboratorních cvičení z předmětu digitální elekt
 #### Stavový diagram všech senzorů
 ![all](Image/Statediagram_komplet.png)
 
+U celkového stavového diagramu je znázorněno přepínání mezi jednotlivými senzory. Přepínání stavů je do uzavřené smyčky, kdy stisknutím pravého tlačítka se pohybujeme do prava a stiskem levého tlačítka vždy o krok zpět (do leva).
+
 #### Stavový diagram pro vlhkost
 ![Humidity](Image/Humidity2.png)
 
@@ -69,6 +73,7 @@ Knihovny byly použity z laboratorních cvičení z předmětu digitální elekt
 #### Stavový diagram pro senzor úrovně světla
 ![Light](Image/Light_level.png)
 
+Ostatní stavové diagramy znázorňují stavy každého senzoru zvlášť. Tlačítka do leva a do prava znamenají jak už bylo řečeno přepnutí na další senzor. Horním a dolním tlačítkem se nastavují požadované hodnoty. Horním tlačítkem (Up) zvětšujeme a dolním tlačítkem (Down) snižujeme požadovanou hodnotu. Prostředním tlačítkem (Select) se vracíme do hlavního menu, označené IDLE.
 
 ### Popis kódu a simulace
 
@@ -76,10 +81,15 @@ Knihovny byly použity z laboratorních cvičení z předmětu digitální elekt
 
 ## Video
 
-Write your text here
+[https://www.youtube.com/watch?v=UxhtJv5UaRo](https://www.youtube.com/watch?v=UxhtJv5UaRo)
 
 <a name="references"></a>
 
 ## References
 
-1. Write your text here.
+1. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/arduino_shield.pdf
+2. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/dht12_manual.pdf
+3. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/LCDKeypad%20Shield%20V1.0%20SCH.pdf
+4. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/DHT12_humidity_temperature_sensor_datasheet.pdf
+5. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/GL5549_SENBA.pdf
+6. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/capacitive_soil_moisture_sensor_datasheet.pdf
