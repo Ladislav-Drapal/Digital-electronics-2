@@ -97,8 +97,8 @@ Ostatní stavové diagramy znázorňují stavy každého senzoru zvlášť. Tla�
 
 ## References
 
-1. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/arduino_shield.pdf
-2. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/LCDKeypad%20Shield%20V1.0%20SCH.pdf
-3. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/DHT12_humidity_temperature_sensor_datasheet.pdf
-4. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/GL5549_SENBA.pdf
-5. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/capacitive_soil_moisture_sensor_datasheet.pdf
+1. [Arduino_shield](https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/arduino_shield.pdf)
+2. [LCDkeypad](https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/LCDKeypad%20Shield%20V1.0%20SCH.pdf)
+3. [DHT12](https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/DHT12_humidity_temperature_sensor_datasheet.pdf)
+4. [GL5549](https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/GL5549_SENBA.pdf)
+5. [Soil_moisture](https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/capacitive_soil_moisture_sensor_datasheet.pdf)
