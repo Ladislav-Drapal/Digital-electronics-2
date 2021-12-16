@@ -4,12 +4,12 @@
 
 * Michal Baránek (219836)
 * Tadeáš Bařina (223380)
-* Alexandr Bekeč (221096)
+* Alexander Bekeč (221096)
 * Ladislav Drápal (223285)
 
 Link to this file in your GitHub repository:
 
-[https://github.com/alexander-bekec/de2-project](https://github.com/alexander-bekec/de2-project)
+[https://github.com/alexander-bekec/Greenhouse_Project_DE2](https://github.com/alexander-bekec/Greenhouse_Project_DE2)
 
 ### Table of contents
 
@@ -49,6 +49,13 @@ Na obrázku je schéma kompletního zapojení. Ze schématu je vidět, že sním
 ## Libraries description
 
 Knihovny byly použity z laboratorních cvičení z předmětu digitální elektronika 2. Byly to knihovny jako např. `uart.h`, `gpio.h`, `timer.h`, `lcd.h`.
+
+### Seznam použitých knihoven
+* [gpio.h](https://github.com/alexander-bekec/Greenhouse_Project_DE2/blob/main/Project/greenhouse_controller_project/greenhouse_controller_project/gpio.h)
+* [lcd.h](https://github.com/alexander-bekec/Greenhouse_Project_DE2/blob/main/Project/greenhouse_controller_project/greenhouse_controller_project/lcd.h)
+* [timer.h](https://github.com/alexander-bekec/Greenhouse_Project_DE2/blob/main/Project/greenhouse_controller_project/greenhouse_controller_project/timer.h)
+* [twi.h](https://github.com/alexander-bekec/Greenhouse_Project_DE2/blob/main/Project/greenhouse_controller_project/greenhouse_controller_project/twi.h)
+* [uart.h](https://github.com/alexander-bekec/Greenhouse_Project_DE2/blob/main/Project/greenhouse_controller_project/greenhouse_controller_project/uart.h)
 
 <a name="main"></a>
 
