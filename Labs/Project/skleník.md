@@ -42,13 +42,13 @@ Cílem projektu je vytvořit ovládání a monitorování intenzity osvětlení,
 ### Schéma zapojení
 ![schema](Image/schema.png)
 
-Na obrázku je schéma kompletního zapojení
+Na obrázku je schéma kompletního zapojení. Ze schématu je vidět, že snímače jsou zapojeny k výstupním pinům PD0-PD3 desky ATMEGA328P. Snímač vlhkosti půdy je připojen přes červenou LED diodu k napájení a signál je posílám přes PIN A0. Tlačítka jsou připojeny k pinu A2. LCD displej má připojení k pinům PB1, PB0 a PD4-PD7. Fotorezistor DHT12 je připojen k pinům SDA a SCL.
 
 <a name="libs"></a>
 
 ## Libraries description
 
-Knihovny byly použity z laboratorních cvičení z předmětu digitální elektronika 2.
+Knihovny byly použity z laboratorních cvičení z předmětu digitální elektronika 2. Byly to knihovny jako např. `uart.h`, `gpio.h`, `timer.h`, `lcd.h`.
 
 <a name="main"></a>
 
@@ -88,8 +88,7 @@ Ostatní stavové diagramy znázorňují stavy každého senzoru zvlášť. Tla�
 ## References
 
 1. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/arduino_shield.pdf
-2. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/dht12_manual.pdf
-3. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/LCDKeypad%20Shield%20V1.0%20SCH.pdf
-4. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/DHT12_humidity_temperature_sensor_datasheet.pdf
-5. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/GL5549_SENBA.pdf
-6. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/capacitive_soil_moisture_sensor_datasheet.pdf
+2. https://github.com/tomas-fryza/Digital-electronics-2/blob/master/Docs/LCDKeypad%20Shield%20V1.0%20SCH.pdf
+3. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/DHT12_humidity_temperature_sensor_datasheet.pdf
+4. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/GL5549_SENBA.pdf
+5. https://github.com/alexander-bekec/de2-project/blob/main/Project/sources/capacitive_soil_moisture_sensor_datasheet.pdf
