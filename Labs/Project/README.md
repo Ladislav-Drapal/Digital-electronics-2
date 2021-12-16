@@ -44,6 +44,9 @@ Cílem projektu je vytvořit ovládání a monitorování intenzity osvětlení,
 
 Na obrázku je schéma kompletního zapojení. Ze schématu je vidět, že snímače jsou zapojeny k výstupním pinům PD0-PD3 desky ATMEGA328P. Snímač vlhkosti půdy je připojen přes červenou LED diodu k napájení a signál je posílám přes PIN A0. Tlačítka jsou připojeny k pinu A2. LCD displej má připojení k pinům PB1, PB0 a PD4-PD7. Fotorezistor DHT12 je připojen k pinům SDA a SCL.
 
+### Reálné zapojení
+![zapojeni](Image/zapojeni.png)
+
 <a name="libs"></a>
 
 ## Libraries description
